@@ -21,7 +21,7 @@ const values = Object.values(person);
 console.log(values);
 values.forEach((value) => {
     console.log(value);
-});
+}); // O(n)
 
 console.log("==================");
 const keyValues = Object.entries(person);
