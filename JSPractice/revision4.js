@@ -16,3 +16,25 @@ for (let i = 0; i < array.length; i++) {
 const avg = sum / array.length;
 
 console.log("Average is " + avg.toFixed(2));
+
+// PROBLEMS
+
+// Sum of even numbers is 76
+// Sum of odd numbers is xyz
+
+let evenSum = 0;
+let oddSum = 0;
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+        evenSum = evenSum + array[i];
+    } else {
+        oddSum = oddSum + array[i];
+    }
+}
+
+console.log("Sum of even numbers is " + evenSum);
+console.log("Sum of odd numbers is " + oddSum);
+
+// Sum of even indexed numbers is xyz
+// Sum of odd idexed numbers is abc
