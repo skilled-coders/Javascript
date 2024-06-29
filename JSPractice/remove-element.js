@@ -1,20 +1,18 @@
-const array = [1, 2, 3, 4, 5];
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const removeElement = [1, 2];
+const removeElement = [1, 2, 5, 3, 7];
+
+const removeElementMap = {};
+
+removeElement.forEach((ele) => {
+    removeElementMap[ele] = true;
+});
+
+console.log(removeElementMap);
 
 const newArray = []
 for (let i = 0; i < array.length; i++) {
-    // if (removeElement.includes(array[i])) {
-    //     continue;
-    // }
-    let exists = false;
-    for (let j = 0; j < removeElement.length; j++) {
-        if (array[i] === removeElement[j]) {
-            exists = true;
-            break;
-        }
-    }
-    if (!exists) {
+    if (!removeElementMap[array[i]]) {
         newArray.push(array[i]);
     }
 }
